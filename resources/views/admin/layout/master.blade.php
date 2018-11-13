@@ -68,7 +68,7 @@
                             {{Auth::guard('admin')->user()->username}} <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="/admin/changePassword">我的帐号</a></li>
+                            <li><a href="{{asset('admin/changePassword')}}">我的帐号</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="{{url('admin/logout')}}">退出</a></li>
                         </ul>
@@ -98,7 +98,7 @@
                 </div>
                 <ul class="list-group menus">
                     <li class="list-group-item" id="35">
-                        <a href="/admin/changePassword">我的资料 </a>
+                        <a href="{{asset('admin/changePassword')}}">我的资料 </a>
                     </li>
                 </ul>
                 <div class="panel-heading">

@@ -8,5 +8,8 @@ Route::group(['prefix' => 'admin' ,'namespace'=>'Admin'],function(){
     Route::get('/index','EntryController@index')->middleware('admin.auth');
     //退出
     Route::get('/logout','EntryController@logout');
+    //修改密码
+    Route::get('/changePassword','MyController@passwordForm');
+    Route::post('/changePassword','MyController@changePassword');
 });
 

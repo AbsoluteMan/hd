@@ -31,7 +31,7 @@
             $('#modal_message').modal('show');
             setTimeout(function () {
                 $('#modal_message').modal('hide');
-            }, 3000);
+            }, 2000);
         })
     </script>
 @endif
